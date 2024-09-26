@@ -1,0 +1,20 @@
+<!-- if my user is not logged in -->
+ <!-- <link rel="stylesheet" href="../Public/home.css"> -->
+  <!-- <header>
+    <style>
+        
+    </style>
+  </header> -->
+  <link rel="stylesheet" href="home.css">
+<div>
+    <% if(!locals.user) 
+    {%>
+       <img class= "welcome-img" src="../Public/images/landing.jpg" alt="landing page">
+       <div class="welcome-title">
+            Unlock Your Potential
+       </div>
+       <form action="/register" method="GET">
+        <button class="welcome-button">Get Started</button>
+       </form>
+       <% } %> 
+</div>
